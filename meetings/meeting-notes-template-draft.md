@@ -1,8 +1,11 @@
 # <To Do - Name>
 
-[Date]
+Date: <To Do>
+
+[Add to calendar](<To Do - Use eventable.com>)
 
 [Meeting link](<To Do - Link>)
+
 [Record](<To Do - Link>)
 
 # Agenda
