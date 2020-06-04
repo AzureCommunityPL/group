@@ -17,10 +17,12 @@ Proponowane wątki:
 
 2. Mozna jakoś oskryptować stworzenie Organizacji DevOps albo tenanta B2C? Głebiej już się coś daje, a ich (chyba) nie
 
-3. Jakaś dobra praktyka kiedy już nie rozpatrywać smaego ACI i pora przejść na AKS?
+3. Ile jest pisania kodu w pracy Solution Architect, a ile klepania YAML np. pod AKS?
+
+
+4. Jakaś dobra praktyka kiedy już nie rozpatrywać smaego ACI i pora przejść na AKS?
    Wybór między SF, SF Mesh, AKS dla super prostego mikroserwisu
 
-4. Ile jest pisania kodu w pracy Solution Architect, a ile klepania YAML np. pod AKS?
 
 5. Jak praktycznie zacząć projektowanie rozwiązania w Azure (dokumentacja, wybór usług, PoC)?
 
