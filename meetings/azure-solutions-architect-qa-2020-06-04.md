@@ -10,7 +10,14 @@ Date: 2020-06-04
 
 # Agenda
 
-[Short description of a meeting]
+Proponowane wątki:
+1. Praktyczne podejście do adresacji sieci w większej skali:
+- Czy stosuje się w praktyce mniejsze podsieci niż VNET /16 i Subnet /24 
+- Adresować inaczej niż od 10.0.0.0? Łatwo o nachodzenie przy spinaniu z kimś, jednak stosnkowo łatwiej niż w on-prem o readresację
+
+2. Mozna jakoś oskryptować stworzenie Organizacji DevOps albo tenanta B2C? Głebiej już się coś daje, a ich (chyba) nie
+
+3. Jakaś dobra praktyka kiedy już nie rozpatrywać smaego ACI i pora przejść na AKS?
 
 # Discussion
 
