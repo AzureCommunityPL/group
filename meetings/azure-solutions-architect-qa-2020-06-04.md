@@ -26,6 +26,8 @@ Proponowane wątki:
 
 6. Jak podejść do tematu architektury dla startupu, który nie wiadomo jak pójdzie i nie do konca da się przewidzieć które funkcjonalności będą kluczowe (= nie mamy liczb, ale zazwyczaj mamy mało hajsu i malo czasu)?
 
+7. Jaką przyjąc strategię dla serwisów multinenant: kontrola podziału na poziomie bazy danych, tworzenie osobnych kopii serwisu per tenant , inne ?
+
 # Discussion
 
 [Summary of a meeting and discussion]
