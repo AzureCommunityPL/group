@@ -18,14 +18,13 @@ Proponowane wątki:
 2. Mozna jakoś oskryptować stworzenie Organizacji DevOps albo tenanta B2C? Głebiej już się coś daje, a ich (chyba) nie
 
 3. Jakaś dobra praktyka kiedy już nie rozpatrywać smaego ACI i pora przejść na AKS?
+   Wybór między SF, SF Mesh, AKS dla super prostego mikroserwisu
 
 4. Ile jest pisania kodu w pracy Solution Architect, a ile klepania YAML np. pod AKS?
 
 5. Jak praktycznie zacząć projektowanie rozwiązania w Azure (dokumentacja, wybór usług, PoC)?
 
 6. Jak podejść do tematu architektury dla startupu, który nie wiadomo jak pójdzie i nie do konca da się przewidzieć które funkcjonalności będą kluczowe (= nie mamy liczb, ale zazwyczaj mamy mało hajsu i malo czasu)?
-
-7. Wybór między SF, SF Mesh, AKS dla super prostego mikroserwisu
 
 # Discussion
 
