@@ -19,6 +19,10 @@ Proponowane wątki:
 
 3. Jakaś dobra praktyka kiedy już nie rozpatrywać smaego ACI i pora przejść na AKS?
 
+4. Ile jest pisania kodu w pracy Solution Architect, a ile klepania YAML np. pod AKS?
+
+5. Jak praktycznie zacząć projektowanie rozwiązania w Azure (dokumentacja, wybór usług, PoC)?
+
 # Discussion
 
 [Summary of a meeting and discussion]
