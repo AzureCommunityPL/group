@@ -45,4 +45,4 @@ Proponowane wątki:
 - [Episode 1 - Mongo DB Is Web Scale](https://www.youtube.com/watch?v=b2F-DItXtZs&feature=youtu.be)
 - [Occam's razor](https://en.wikipedia.org/wiki/Occam%27s_razor)
 - [KISS](https://en.wikipedia.org/wiki/KISS_principle)
-- [Nie do końca udokomentowane zakładanie nowego AAD](https://account.azure.com/organization)
+- [Nie do końca udokomentowane zakładanie nowego AAD bez konta w Azure](https://account.azure.com/organization)
