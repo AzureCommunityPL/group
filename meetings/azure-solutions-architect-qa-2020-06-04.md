@@ -37,3 +37,12 @@ Proponowane wątki:
 # Actions
 
 [Action items for a next meeting]
+
+# Links
+
+- [Most People Don't Think Simple Enough](https://www.youtube.com/watch?v=1CSeY10zbqo)
+- [Migrate your IaaS resources to Azure Resource Manager by March 1, 20230](https://docs.microsoft.com/en-us/azure/virtual-machines/classic-vm-deprecation)
+- [Episode 1 - Mongo DB Is Web Scale](https://www.youtube.com/watch?v=b2F-DItXtZs&feature=youtu.be)
+- [Occam's razor](https://en.wikipedia.org/wiki/Occam%27s_razor)
+- [KISS](https://en.wikipedia.org/wiki/KISS_principle)
+- [Nie do końca udokomentowane zakładanie nowego AAD](https://account.azure.com/organization)
