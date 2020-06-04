@@ -23,6 +23,10 @@ Proponowane wątki:
 
 5. Jak praktycznie zacząć projektowanie rozwiązania w Azure (dokumentacja, wybór usług, PoC)?
 
+6. Jak podejść do tematu architektury dla startupu, który nie wiadomo jak pójdzie i nie do konca da się przewidzieć które funkcjonalności będą kluczowe (= nie mamy liczb, ale zazwyczaj mamy mało hajsu i malo czasu)?
+
+7. Wybór między SF, SF Mesh, AKS dla super prostego mikroserwisu
+
 # Discussion
 
 [Summary of a meeting and discussion]
