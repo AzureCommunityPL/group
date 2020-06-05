@@ -85,7 +85,7 @@ Najistotniejsze aspekty, o które należy zadbać:
 
 ## 6. Jak podejść do tematu architektury dla startupu, który nie wiadomo jak pójdzie i nie do konca da się przewidzieć które funkcjonalności będą kluczowe (= nie mamy liczb, ale zazwyczaj mamy mało hajsu i malo czasu)?
 - Najlepiej zacząć tanio/prosto od Azure Functions (lub AppService), Service Bus (jeśli potrzebny), jakiś Storage i najtańszy SQL odpowiednio izolowany. jak wypali to potem najwyżej przepisać
-- Mentoring stał na GitHub Pages (static + JS + Python) podpietym do Azure Storage Tables 
+- Mentoring stał na GitHub Pages (static + JS), Azure Functions (Python) podpietym do Azure Storage Tables 
 
 
 ## 7. Jaką przyjąc strategię dla serwisów multinenant B2B: kontrola podziału na poziomie bazy danych, tworzenie osobnych kopii serwisu per tenant , inne ?
