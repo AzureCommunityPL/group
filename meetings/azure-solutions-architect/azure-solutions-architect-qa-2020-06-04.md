@@ -51,9 +51,9 @@ http://www.subnet-calculator.com/
 - Tylko 10-20% to praca na środowiskach produkcyjnych - raczej tylko w przypadku dużych problemów
 
 Najistotniejsze aspekty, o które należy zadbać:
-- Uśrednianie projektu do poziomu zespołu utrzymującego
+- Uśrednianie projektu do poziomu zespołu tworzącego i utrzymującego
 - Budowanie zastępowalności poprzez przekazywanie wiedzy
-- Przekazywanie do analizy poszczególnych aspektów rozwiązania innym
+- Umiejętność przekazywanie do analizy poszczególnych aspektów rozwiązania innym
 - Rozwijanie umiejętności miękkich
 
 [KISS](https://en.wikipedia.org/wiki/KISS_principle)
@@ -66,7 +66,7 @@ Najistotniejsze aspekty, o które należy zadbać:
 - Jak coś super prostego to po prostu Azure Functions albo AppService (łatwy Continuous Deployment, masa języków programowania, taniość)
 - ACI i AppService'y otrzymają sporo nowych funkcjonalności od strony sieci rozwiązujących wcześniejsze problemy z łącznością prywatną
 - Service Fabric jest cudowny, jednak ma wysoki próg wejścia by wykorzystać pełnię możliwości - konieczny C# i architektura systemów rozproszonych
-- AKS wymaga pilnowania bezstanowości service'ów i minimalizacja użytych elementów
+- AKS wymaga pilnowania bezstanowości service'ów i minimalizacja użytych elementów (branie gotowych od dostawcy)
 - Kluczowe jest nie nastawianie się na konkretną technologię, tylko problemy jakie należy rozwiązać - niekoniecznie mikroserwisy są lepsze od monolitu. Na przykładzie [MongoDB](https://www.youtube.com/watch?v=b2F-DItXtZs) i [Dilberta](https://i.redd.it/8v9fopt6wlx31.jpg)
 
 
