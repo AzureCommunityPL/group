@@ -1,6 +1,6 @@
 # #azure-solutions-architect Mentoring tech stack
 
-Date: 2020-18-04
+Date: 2020-06-18
 
 [Add to calendar](https://evt.mx/uUMzNr9T)
 
