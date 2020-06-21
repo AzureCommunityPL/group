@@ -31,16 +31,16 @@ Date: 2020-06-18
     * Na każde zgłoszenie odpalała się Logic Apka
     * Dodawała dane do MailerLite, żeby potem wysyłać emailing do uczestników.
     * Klucz wyciągała z Key Vault  
-        * Zrobione hard code, bo Logic App nie ma dobrej integracji z KV używając MSI.
+        * Zrobione ręcznie przez HTTP Request z MSI Logic App, bo Logic App nie ma dobrej integracji z KV używając MSI.
     * Kroku, gdzie wyciągany jest klucz do MailerLite, skonfigurowany jest w taki sposób, że dane wrażliwe nie są pokazywane w logach.
     * Do Forms nie ma porządnego API.
     * Następnie było tworzone Issue na GitHub z danymi z formularza.
     * Potem Issue było przypisywane do tworzonej karty w projekcie.
     * Dalej zgłoszenie było zapisywane do Table na Azure Storage.
-    * Przy tej ilości zgłoszeń API GH było bardzo wolne, dlatego też te zgłoszenia do Table.
+    * Przy tej ilości zgłoszeń API GH było bardzo wolne, dlatego też te zgłoszenia trafiały do Table.
     * Dalej poprzez przenoszenie kart w projekcie na GitHub wstępnie sortowano uczestników, którzy mieli być przekazani mentorom. Były zdefiniowane odpowiednie tagi i proces.
 4. Kod
-    * W Pythonie, dość brudno napisane, ale po prostu miało działać :)
+    * W Pythonie, napisane quick and dirty, bo po prostu miało działać :)
     * Jeżeli któraś karta w projekcie na GitHub miała +4, to leciała już do mentora.
     * Dla każdej karty jak wyżej robiono request do API GitHub żeby wyciągnąć karty z +4 i zapisywano w odpowiedniej tabeli na Storage, gdzie był tylko partition key i row key.
 5. Strona dla mentorów
@@ -67,5 +67,5 @@ Date: 2020-06-18
     * Niedługo będzie można pisać [kod do LogicApp w C#](https://github.com/Azure/logicapps/tree/master/preview)!
     * Do merge conflict dochodzi, kiedy scope zadań się przecinają - może trzeba tutaj zobaczyć co tu nie działa? Albo pull requesty za długo leżą.
 * Application Gateway Ingress Controller
-    * Jest w preview, ma parę raków pod spodem, nieprodukcyjnie. Po drugie jest słabo konfigurowalny.
+    * Jest w preview, ma parę raków pod spodem, nieprodukcyjnie, dopóki nie będzie GA (support). Ma słabszą konfigurację niż NGINX Ingress Controller albo Traefik.
     * Najlepiej zwykły, klasyczny Ingress Controller NGINX. Ewentualnie Traefik.
