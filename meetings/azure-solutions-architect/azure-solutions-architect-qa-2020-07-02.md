@@ -35,4 +35,7 @@ Założenia:
 - Zdjęcie jest czytane najczęściej przez pierwsze 45 dni
 - Ile będzie kosztować system na przestrzeni 1, 12 i 24 miesięcy?
 
+Poglądowy schemat architektury:
+![Schemat architektury](images/architektura02072020.jpg)
+
 ## Q&A
