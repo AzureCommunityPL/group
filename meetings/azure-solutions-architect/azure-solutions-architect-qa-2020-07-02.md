@@ -7,7 +7,7 @@ Date: 2020-07-02
 
 [Meeting link](https://teams.microsoft.com/l/meetup-join/19%3ameeting_MGNjMTU5MTktN2QxMi00YTRhLThkYmUtYzZkZTM0MGUyYjY5%40thread.v2/0?context=%7b%22Tid%22%3a%22cc58971a-0481-4ec0-bf8d-bb2e265db003%22%2c%22Oid%22%3a%22f907c950-2a9a-4012-b163-af67be63b5d6%22%7d)
 
-[Recording](#)
+[Recording](https://youtu.be/2H8VoSQAw1c)
 
 # Agenda
 
@@ -34,5 +34,8 @@ Założenia:
 - Skala to 100k zdjęć miesięcznie zapisywanych, odczyt 2M razy, średni rozmiar 1 mb
 - Zdjęcie jest czytane najczęściej przez pierwsze 45 dni
 - Ile będzie kosztować system na przestrzeni 1, 12 i 24 miesięcy?
+
+Poglądowy schemat architektury:
+![Schemat architektury](images/architektura02072020.jpg)
 
 ## Q&A
