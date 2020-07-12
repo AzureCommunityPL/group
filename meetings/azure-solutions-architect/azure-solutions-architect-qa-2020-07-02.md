@@ -83,6 +83,6 @@ CosmosDb karze głupotę. Sprawdza się przy średnich i dużych rozwiązaniach 
 
 3.SLA
 
-Dobrze zdefiniowane SLA mówi że jestem w stanie przetworzyć jakiś proces.
+Dobrze zdefiniowane SLA mówi że jestem w stanie przetworzyć jakiś proces. Wartość SLA powinna zostać ustalona z biznesem, innymi słowy należy ustalić jak długa przerwa w działaniu aplikacji/systemu jest dopuszczalna.
 
 Jeśli mamy dwie zależne od siebie usługi to mnożymy ich avaiability. Dla dwóch regionów korzystamy z [rachunku prawdopodobieństwa i matematyki dyskretnej](https://devops.stackexchange.com/questions/711/how-do-you-calculate-the-compound-service-level-agreement-sla-for-cloud-servic)
