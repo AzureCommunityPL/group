@@ -1,0 +1,85 @@
+# FAQ Azure tworzone przez [Microsoft Azure User Group Poland](https://www.facebook.com/groups/azureugpl/)
+
+## Jak coś dodać do tego FAQ?
+
+Po prostu zrób pull requests! Linki do własnych treści Azure mile widziane ze słowem komentarza! 😀
+
+Jak zrobić PR? 
+
+1. [Zrób fork](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
+1. Dodaj swoją treść.
+1. [Zrób PR](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork)
+
+## Spis treści
+ 
+* [Podstawowe rzeczy ](#podstawowe-rzeczy)
+* [Darmowe usługi Azure (free tier)](#darmowe-usługi-azure-free-tier)
+* [Pytania luźne, ogólne](#pytania-luźne-ogólne)
+* [Usługi w Azure](#usługi-w-azure)
+   * [Azure Storage](#azure-storage)
+   * [Azure App Service](#azure-app-service)
+   * [Azure Functions](#azure-functions)
+   * [Azure Resource Manager(ARM)](#azure-resource-manager-arm)
+* [Certyfikaty](#certyfikaty)
+
+## Podstawowe rzeczy 
+
+**Gdzie się uczyć Azure?**
+
+- Darmowe kursy Microsoft na [Microsoft Learn](https://docs.microsoft.com/en-us/learn/)
+- [Azure JumpStart](https://marczak.io/posts/2019/07/azure-jumpstart/) by @MarczakIO
+- Darmowe szkolenia wideo w [Pluralsight](https://www.pluralsight.com/partners/microsoft/azure)
+
+**Co śledzić w temacie Azure?**
+
+- [Oficjalny blog Azure](https://azure.microsoft.com/en-us/blog/)
+- [Ogłoszenia na temat nowych usług i zmian](https://azure.microsoft.com/en-us/blog/topics/announcements/)
+- [Ogłoszenia aktualizacji w uslugach](https://azure.microsoft.com/en-us/updates/)
+- [Status usług Azure](https://status.azure.com/en-us/status)
+- [Azure Support na Twitterze](https://twitter.com/AzureSupport)
+
+**Ciekawe artykuły i strony dla architektów Azure**
+- [Centrum architektury Azure](https://docs.microsoft.com/en-us/azure/architecture/)
+- [Lista limitów i ograniczeń usług Azure](https://docs.microsoft.com/en-us/azure/azure-subscription-service-limits)
+- [Architektury referencyjne](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/)
+- [Przykładowe architektury z wyszukiwarką po usługach](https://azure.microsoft.com/en-us/solutions/architecture/)
+- [Nieoficjalny agregator usług z ich parametrami(SLA, dostępność, status)](https://azurecharts.com/)
+
+## Darmowe usługi Azure (free tier)
+
+- Konto [Azure Free Trial](https://azure.microsoft.com/en-us/free/)
+- Lista darmowych uslug w [Azure Free Tier](https://azure.microsoft.com/pl-pl/free/)
+- [Przewodnik po Azure Free Tier](https://marczak.io/posts/2019/07/azure-jumpstart/)
+
+## Pytania luźne, ogólne
+
+## Usługi w Azure
+ 
+### Azure Storage
+
+### Azure App Service
+
+### Azure Functions
+
+### Azure Resource Manager (ARM)
+- [Struktura szablonów ARM](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-authoring-templates)
+- [Definicje zasobów Azure do Azure Resource Managera](https://docs.microsoft.com/en-us/azure/templates/)
+- [Azure Resource Manager REST API](https://docs.microsoft.com/en-us/rest/api/resources/)
+
+## Certyfikaty
+
+### Lista oficjalnych laboratoriów do certyfikatów
+
+* [AZ-103 Microsoft Azure Administrator](https://github.com/MicrosoftLearning/AZ-103-MicrosoftAzureAdministrator)
+* [AZ-203 Developing Solutions for Microsoft Azure](https://github.com/MicrosoftLearning/AZ-203-DevelopingSolutionsforMicrosoftAzure)
+* [AZ-300 Microsoft Azure Architect Technologies](https://github.com/MicrosoftLearning/AZ-300-MicrosoftAzureArchitectTechnologies)
+* [AZ-301 Microsoft Azure Architect Design](https://github.com/MicrosoftLearning/AZ-301-MicrosoftAzureArchitectDesign)
+* [AZ-500 Azure Security](https://github.com/MicrosoftLearning/AZ-500-Azure-Security)
+* [AI Introduction](https://github.com/MicrosoftLearning/AI-Introduction)
+* [AI-100 Designing and Implementing an Azure AI Solution](https://github.com/MicrosoftLearning/AI-100-Design-Implement-Azure-AISol)
+* [DP-100 Implementing an Azure Data Science Solution](https://github.com/MicrosoftLearning/DP-100-Designing-and-Implementing-a-Data-Science-Solutio)
+* [DP-200 Implementing an Azure Data Solution](https://github.com/MicrosoftLearning/DP-200-Implementing-an-Azure-Data-Solution)
+* [DP-201 Designing an Azure Data Solution](https://github.com/MicrosoftLearning/DP-201-Designing-an-Azure-Data-Solution)
+
+### Lista oficjalnych szkoleń do certyfikatów
+10.03.2020 - linki usunięte gdyż ponieważ wygasły i szkoda miejsca w repo na nie :) - Emil Wasilewski
