@@ -65,6 +65,7 @@ Jak zrobić PR?
 - [Struktura szablonów ARM](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-authoring-templates)
 - [Definicje zasobów Azure do Azure Resource Managera](https://docs.microsoft.com/en-us/azure/templates/)
 - [Azure Resource Manager REST API](https://docs.microsoft.com/en-us/rest/api/resources/)
+- [Nauka tworzenia ARM](https://github.com/microsoft/Learning-ARM)
 
 ## Certyfikaty
 
