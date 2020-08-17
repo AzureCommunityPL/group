@@ -72,7 +72,9 @@ Jak zrobić PR?
 ### Lista oficjalnych laboratoriów do certyfikatów
 
 * [AZ-103 Microsoft Azure Administrator](https://github.com/MicrosoftLearning/AZ-103-MicrosoftAzureAdministrator)
+* [AZ-104 Microsoft Azure Administrator](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator)
 * [AZ-203 Developing Solutions for Microsoft Azure](https://github.com/MicrosoftLearning/AZ-203-DevelopingSolutionsforMicrosoftAzure)
+* [AZ-204 Developing Solutions for Microsoft Azure](https://github.com/MicrosoftLearning/AZ-204-DevelopingSolutionsforMicrosoftAzure)
 * [AZ-300 Microsoft Azure Architect Technologies](https://github.com/MicrosoftLearning/AZ-300-MicrosoftAzureArchitectTechnologies)
 * [AZ-301 Microsoft Azure Architect Design](https://github.com/MicrosoftLearning/AZ-301-MicrosoftAzureArchitectDesign)
 * [AZ-500 Azure Security](https://github.com/MicrosoftLearning/AZ-500-Azure-Security)
