@@ -21,7 +21,9 @@ Jak zrobić PR?
    * [Azure Functions](#azure-functions)
    * [Azure Resource Manager(ARM)](#azure-resource-manager-arm)
 * [Certyfikaty](#certyfikaty)
-* [Cloud Adoption Framework] (Cloud-Adoption-Framework)
+
+* [Cloud Adoption Framework](#cloud-adoption-framework)
+
 
 ## Podstawowe rzeczy 
 
@@ -91,6 +93,8 @@ Jak zrobić PR?
 ## Cloud Adoption Framework
 
 ### Lista pomocnych linków
-* [Cloud Adoption Framework] (https://azure.microsoft.com/pl-pl/cloud-adoption-framework/) [YouTube:] (https://www.youtube.com/watch?v=sy6L6yXyv5Q)
-* [FasTrack Azure] (https://azure.microsoft.com/pl-pl/programs/azure-fasttrack/)
-* [Assesments] (https://docs.microsoft.com/pl-pl/assessments/)
+
+* [Cloud Adoption Framework](https://azure.microsoft.com/pl-pl/cloud-adoption-framework/) 
+* [YouTube:](https://www.youtube.com/watch?v=sy6L6yXyv5Q)
+* [FasTrack Azure](https://azure.microsoft.com/pl-pl/programs/azure-fasttrack/)
+* [Assessments](https://docs.microsoft.com/pl-pl/assessments/)
