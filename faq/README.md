@@ -24,6 +24,8 @@ Jak zrobić PR?
 
 * [Cloud Adoption Framework](#cloud-adoption-framework)
 
+* [Przykłady](#przykłady)
+   * [Logic Apps](#logic-apps)
 
 ## Podstawowe rzeczy 
 
@@ -98,3 +100,9 @@ Jak zrobić PR?
 * [YouTube:](https://www.youtube.com/watch?v=sy6L6yXyv5Q)
 * [FasTrack Azure](https://azure.microsoft.com/pl-pl/programs/azure-fasttrack/)
 * [Assessments](https://docs.microsoft.com/pl-pl/assessments/)
+
+## Przykłady
+
+### Logic Apps
+
+* [Tworzenie formularza typeform](../examples/logic-apps/create-form-in-typeform.md)
