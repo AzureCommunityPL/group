@@ -1,4 +1,4 @@
-# Tworzenie formularza [typeform](https://www.typeform.com/) za pomocą Logic Apps
+# Tworzenie formularza [typeform](https://www.typeform.com/) za pomocą Logic App
 
 Aby stworzyć formularz najpierw należy przygotować jego [definicję](https://developer.typeform.com/create/reference/create-form/) w postaci pliku json. Najprostszą metodą jest pobranie definicji istniejącego formularza wykonując zapytanie `GET` pod adres `https://api.typeform.com/forms/<formId>` gdzie w miejscu `<formId>` należy podać identyfikator formularza. Z tak pobranej definicji usuwamy pola `id`.
 
@@ -8,7 +8,7 @@ Kolejnym krokiem jest wygenerowanie tokena z poziomu konta użytkownika w zakła
 
 Mając wykonane te czynności możemy przejść do częsci zasadniczej czyli wywołania `HTTP POST` na adres `https://api.typeform.com/forms` z wykorzystaniem zadania `HTTP - Choose a REST API to invoke`
 
-![Konfiguracja zadania w Logic Apps](./images/typeform-logic-apps-http-action.png)
+![Konfiguracja zadania w Logic App](./images/typeform-logic-apps-http-action.png)
 
 Po wybraniu zadania ustawiamy:
 
@@ -17,7 +17,7 @@ Po wybraniu zadania ustawiamy:
 - nagłówek `Authorization` na `Bearer <personal-token>`,
 - oraz body w którym umieszczamy wcześniej przygotowaną definicję formularza.
 
-![Konfiguracja zadania w Logic Apps](./images/typeform-logic-apps-action.png)
+![Konfiguracja zadania w Logic App](./images/typeform-logic-apps-action.png)
 
 Przykładowa definicja formularza CFP grupy wygląda następująca:
 
@@ -249,9 +249,9 @@ Przykładowa definicja formularza CFP grupy wygląda następująca:
 }
 ```
 
-W definicji tej znajdują się dwa parametry dynamicznie ustawiane po stronie Logic Apps. Są to:
+W definicji tej znajdują się dwa parametry dynamicznie ustawiane po stronie Logic App. Są to:
 
 - `"title": "@{triggerBody()?['title']}",`
 - `"welcome_screens.title": "@{triggerBody()?['welcome-screen-details']}"`
 
-których to wartości mogą wyglądać tak: `CFP - [ONLINE] 43 spotkanie Microsoft Azure User Group Poland` i `Zgłoszenia sesji na 43 spotkanie Microsoft Azure User Group Poland\n\nData: 09 października od 18:00\nMiejsce: Online` odpowiednio, a są przekazywane jako parametry wywołania Logic Apps.
+których to wartości mogą wyglądać tak: `CFP - [ONLINE] 43 spotkanie Microsoft Azure User Group Poland` i `Zgłoszenia sesji na 43 spotkanie Microsoft Azure User Group Poland\n\nData: 09 października od 18:00\nMiejsce: Online` odpowiednio, a są przekazywane jako parametry wywołania Logic App.

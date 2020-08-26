@@ -25,7 +25,7 @@ Jak zrobić PR?
 * [Cloud Adoption Framework](#cloud-adoption-framework)
 
 * [Przykłady](#przykłady)
-   * [Logic Apps](#logic-apps)
+   * [Logic App](#logic-apps)
 
 ## Podstawowe rzeczy 
 
@@ -103,6 +103,6 @@ Jak zrobić PR?
 
 ## Przykłady
 
-### Logic Apps
+### Logic App
 
 * [Tworzenie formularza typeform](../examples/logic-apps/create-form-in-typeform.md)
