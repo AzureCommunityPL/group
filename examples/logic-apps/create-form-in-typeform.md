@@ -8,7 +8,7 @@ Kolejnym krokiem jest wygenerowanie tokena z poziomu konta użytkownika w zakła
 
 Mając wykonane te czynności możemy przejść do częsci zasadniczej czyli wywołania `HTTP POST` na adres `https://api.typeform.com/forms` z wykorzystaniem zadania `HTTP - Choose a REST API to invoke`
 
-![Konfiguracja zadania w Log Apps](./images/typeform-logic-apps-http-action.png)
+![Konfiguracja zadania w Logic Apps](./images/typeform-logic-apps-http-action.png)
 
 Po wybraniu zadania ustawiamy:
 
@@ -17,7 +17,7 @@ Po wybraniu zadania ustawiamy:
 - nagłówek `Authorization` na `Bearer <personal-token>`,
 - oraz body w którym umieszczamy wcześniej przygotowaną definicję formularza.
 
-![Konfiguracja zadania w Log Apps](./images/typeform-logic-apps-action.png)
+![Konfiguracja zadania w Logic Apps](./images/typeform-logic-apps-action.png)
 
 Przykładowa definicja formularza CFP grupy wygląda następująca:
 
@@ -249,7 +249,7 @@ Przykładowa definicja formularza CFP grupy wygląda następująca:
 }
 ```
 
-W definicji tej znajdują się dwa parametry dynamicznie ustawiane po stronie Log Apps. Są to:
+W definicji tej znajdują się dwa parametry dynamicznie ustawiane po stronie Logic Apps. Są to:
 
 - `"title": "@{triggerBody()?['title']}",`
 - `"welcome_screens.title": "@{triggerBody()?['welcome-screen-details']}"`
