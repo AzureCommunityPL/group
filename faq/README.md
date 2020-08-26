@@ -25,7 +25,7 @@ Jak zrobić PR?
 * [Cloud Adoption Framework](#cloud-adoption-framework)
 
 * [Przykłady](#przykłady)
-   * [Logic App](#logic-apps)
+   * [Logic App](#logic-app)
 
 ## Podstawowe rzeczy 
 
