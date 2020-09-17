@@ -106,4 +106,4 @@ Jak zrobić PR?
 ### Logic App
 
 * [Tworzenie formularza typeform](../examples/logic-apps/create-form-in-typeform.md)
-* [Tworzenie formularza typeform bazując na odpowiedziach udzielonych do innego fromularza](../examples/logic-apps/create-form-in-typeform-based-on-the-typeform-responses.md) - w przykładzie tym pokazano jak korzystać z szablonów Liquid
+* [Tworzenie formularza typeform bazując na odpowiedziach udzielonych do innego formularza](../examples/logic-apps/create-form-in-typeform-based-on-the-typeform-responses.md) - w przykładzie tym pokazano jak korzystać z szablonów Liquid
