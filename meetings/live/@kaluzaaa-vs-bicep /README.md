@@ -1,5 +1,4 @@
-Wersja 0.1 by [@eklime](https://github.com/eklime)
-{: .notice--info}
+-- Wersja 0.1 by [@eklime](https://github.com/eklime)
 
 # 1. Opis rozwiązania 
 Rozwiązanie opierać się ma o klasyczny model aplikacji trójwarstwowej zawierające warstwę dostępową, obliczeniową oraz bazodanową. 
