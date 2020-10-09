@@ -8,6 +8,8 @@ Bazy danych opierać się będą o Azure SQL. Maszyny warstwy dostępowej muszą
 Dostęp do warstwy obliczeniowej ma być możliwy jedynie z warstwy dostępowej po porcie 443 lub z "jump hosta" wewnątrz sieci prywatnej przy wykorzystaniu RDP lub SSH w zależności od systemu operacyjnego. 
 Dostęp do baz danych ma być możliwy tylko z poziomu warstwy obliczeniowej i w/w "jump hosta". 
 
+![](architecture.png)
+
 # 2. Założenia techniczne 
 1. Wszystkie zasoby muszą być wdrożone w obrębie jednego regionu geograficznego 
 2. Maszyny wirtualne pracują w tej samej sieci prywatnej jednak w dwóch różnych podsieciach 
