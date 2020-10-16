@@ -1,0 +1,299 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "nameSufix": {
+      "type": "string",
+      "defaultValue": "001"
+    },
+    "ubuntuOSVersion": {
+      "type": "string",
+      "defaultValue": "18.04-LTS",
+      "allowedValues": [
+        "12.04.5-LTS",
+        "14.04.5-LTS",
+        "16.04.0-LTS",
+        "18.04-LTS"
+      ]
+    },
+    "adminUsername": {
+      "type": "string",
+      "defaultValue": "emil"
+    },
+    "authenticationType": {
+      "type": "string",
+      "defaultValue": "sshPublicKey",
+      "allowedValues": [
+        "sshPublicKey",
+        "password"
+      ]
+    },
+    "adminPasswordOrKey": {
+      "type": "string",
+      "defaultValue": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCdiZSR85ZdsHucn/0K1zH2NnRwxoB0FLpFsOkXnHRjoCm4e7+Do83nXLZPG1KzyDDEe/Sm+UgGpBhT0HvNfu0XukqNVxvReTUbHBoFwnot+KTX9jlBd6C04N9CMZ7ANwtw9KvrgtRZZD13y+Qztzbpz7tcLIrhegVsinhykkg1gGxxE4ZRgMCfd5dskrfJ+M0CZfaFGwcPP7dUKf4vYyZVEwM0ErvbhYojAtaTZLMPxUIeCuYeV2e8LstL2nN271rCcfKcFixKXVlttkSTHPSYVn/HPbTvBAap42C7zS98ooyngq4WGvx8JXrAgtugyAVK/YB/b4RHgzQgBYW3nURn lukasz@UKASZKAUNY3BC3"
+    }
+  },
+  "functions": [],
+  "variables": {
+    "frontendNetworkSecurityGroupName": "fe-nsg",
+    "location": "[resourceGroup().location]",
+    "vnetcfg": {
+      "name": "vNET",
+      "addressSpacePrefix": "10.10.0.0/23",
+      "feSubnetName": "Frontend",
+      "feSubnetPrefix": "10.10.0.0/24",
+      "beSubnetName": "Backend",
+      "beSubnetPrefix": "10.10.1.0/27",
+      "mgmtSubnetName": "Management",
+      "mgmtSubnetPrefix": "10.10.1.32/27"
+    },
+    "asfrontendcfg": {
+      "name": "ASFrontend",
+      "platformUpdateDomainCount": 5,
+      "platformFaultDomainCount": 3
+    },
+    "linuxConfiguration": {
+      "disablePasswordAuthentication": true,
+      "ssh": {
+        "publicKeys": [
+          {
+            "path": "[format('/home/{0}/.ssh/authorized_keys', parameters('adminUsername'))]",
+            "keyData": "[parameters('adminPasswordOrKey')]"
+          }
+        ]
+      }
+    },
+    "vmFrontend001": {
+      "vmName": "vmFe001",
+      "networkInterfaceName": "fe001-nic",
+      "subnetRef": "[format('{0}/subnets/{1}', resourceId('Microsoft.Network/virtualNetworks', variables('vnetcfg').name), variables('vnetcfg').feSubnetName)]",
+      "vmSize": "Standard_B2s",
+      "osDiskType": "Standard_LRS"
+    }
+  },
+  "resources": [
+    {
+      "type": "Microsoft.Network/virtualNetworks",
+      "apiVersion": "2020-05-01",
+      "name": "[variables('vnetcfg').name]",
+      "location": "[variables('location')]",
+      "properties": {
+        "addressSpace": {
+          "addressPrefixes": [
+            "[variables('vnetcfg').addressSpacePrefix]"
+          ]
+        },
+        "subnets": [
+          {
+            "name": "[variables('vnetcfg').feSubnetName]",
+            "properties": {
+              "addressPrefix": "[variables('vnetcfg').feSubnetPrefix]"
+            }
+          },
+          {
+            "name": "[variables('vnetcfg').beSubnetName]",
+            "properties": {
+              "addressPrefix": "[variables('vnetcfg').beSubnetPrefix]"
+            }
+          },
+          {
+            "name": "[variables('vnetcfg').mgmtSubnetName]",
+            "properties": {
+              "addressPrefix": "[variables('vnetcfg').mgmtSubnetPrefix]"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "Microsoft.Compute/availabilitySets",
+      "apiVersion": "2020-06-01",
+      "name": "[variables('asfrontendcfg').name]",
+      "location": "[variables('location')]",
+      "properties": {
+        "platformUpdateDomainCount": "[variables('asfrontendcfg').platformUpdateDomainCount]",
+        "platformFaultDomainCount": "[variables('asfrontendcfg').platformFaultDomainCount]"
+      }
+    },
+    {
+      "type": "Microsoft.Network/publicIPAddresses",
+      "apiVersion": "2019-02-01",
+      "name": "fe-public-ip",
+      "location": "[variables('location')]",
+      "properties": {
+        "publicIPAllocationMethod": "Static",
+        "publicIPAddressVersion": "IPv4"
+      },
+      "sku": {
+        "name": "Standard"
+      }
+    },
+    {
+      "type": "Microsoft.Network/loadBalancers",
+      "apiVersion": "2020-06-01",
+      "name": "fe-lb",
+      "location": "[variables('location')]",
+      "sku": {
+        "name": "Standard"
+      },
+      "properties": {
+        "frontendIPConfigurations": [
+          {
+            "name": "frontend",
+            "properties": {
+              "publicIPAddress": {
+                "id": "[resourceId('Microsoft.Network/publicIPAddresses', 'fe-public-ip')]"
+              }
+            }
+          }
+        ],
+        "backendAddressPools": [
+          {
+            "name": "backend"
+          }
+        ],
+        "loadBalancingRules": [
+          {
+            "name": "HTTPLBRule",
+            "properties": {
+              "frontendIPConfiguration": {
+                "id": "[resourceId('Microsoft.Network/loadBalancers/frontendIPConfigurations', 'fe-lb', 'frontend')]"
+              },
+              "backendAddressPool": {
+                "id": "[resourceId('Microsoft.Network/loadBalancers/backendAddressPools', 'fe-lb', 'backend')]"
+              },
+              "frontendPort": 443,
+              "backendPort": 443,
+              "protocol": "Tcp",
+              "probe": {
+                "id": "[resourceId('Microsoft.Network/loadBalancers/probes', 'fe-lb', 'probe')]"
+              }
+            }
+          }
+        ],
+        "probes": [
+          {
+            "name": "probe",
+            "properties": {
+              "protocol": "Tcp",
+              "port": 443
+            }
+          }
+        ]
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.Network/publicIPAddresses', 'fe-public-ip')]"
+      ]
+    },
+    {
+      "type": "Microsoft.Network/networkSecurityGroups",
+      "apiVersion": "2019-02-01",
+      "name": "[variables('frontendNetworkSecurityGroupName')]",
+      "location": "[variables('location')]",
+      "properties": {
+        "securityRules": [
+          {
+            "name": "SSH",
+            "properties": {
+              "priority": 1000,
+              "protocol": "Tcp",
+              "access": "Allow",
+              "direction": "Inbound",
+              "sourceAddressPrefix": "*",
+              "sourcePortRange": "*",
+              "destinationAddressPrefix": "*",
+              "destinationPortRange": "22"
+            }
+          },
+          {
+            "name": "HTTPS",
+            "properties": {
+              "priority": 1100,
+              "protocol": "Tcp",
+              "access": "Allow",
+              "direction": "Inbound",
+              "sourceAddressPrefix": "*",
+              "sourcePortRange": "*",
+              "destinationAddressPrefix": "*",
+              "destinationPortRange": "443"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "Microsoft.Network/networkInterfaces",
+      "apiVersion": "2018-10-01",
+      "name": "[variables('vmFrontend001').networkInterfaceName]",
+      "location": "[variables('location')]",
+      "properties": {
+        "ipConfigurations": [
+          {
+            "name": "ipconfig1",
+            "properties": {
+              "subnet": {
+                "id": "[variables('vmFrontend001').subnetRef]"
+              },
+              "privateIPAllocationMethod": "Dynamic",
+              "loadBalancerBackendAddressPools": [
+                {
+                  "id": "[resourceId('Microsoft.Network/loadBalancers/backendAddressPools', 'fe-lb', 'backend')]"
+                }
+              ]
+            }
+          }
+        ],
+        "networkSecurityGroup": {
+          "id": "[resourceId('Microsoft.Network/networkSecurityGroups', variables('frontendNetworkSecurityGroupName'))]"
+        }
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.Network/networkSecurityGroups', variables('frontendNetworkSecurityGroupName'))]",
+        "[resourceId('Microsoft.Network/virtualNetworks', variables('vnetcfg').name)]"
+      ]
+    },
+    {
+      "type": "Microsoft.Compute/virtualMachines",
+      "apiVersion": "2019-03-01",
+      "name": "[variables('vmFrontend001').vmName]",
+      "location": "[variables('location')]",
+      "properties": {
+        "hardwareProfile": {
+          "vmSize": "[variables('vmFrontend001').vmSize]"
+        },
+        "storageProfile": {
+          "osDisk": {
+            "createOption": "FromImage",
+            "managedDisk": {
+              "storageAccountType": "[variables('vmFrontend001').osDiskType]"
+            }
+          },
+          "imageReference": {
+            "publisher": "Canonical",
+            "offer": "UbuntuServer",
+            "sku": "[parameters('ubuntuOSVersion')]",
+            "version": "latest"
+          }
+        },
+        "networkProfile": {
+          "networkInterfaces": [
+            {
+              "id": "[resourceId('Microsoft.Network/networkInterfaces', variables('vmFrontend001').networkInterfaceName)]"
+            }
+          ]
+        },
+        "osProfile": {
+          "computerName": "[variables('vmFrontend001').vmName]",
+          "adminUsername": "[parameters('adminUsername')]",
+          "adminPassword": "[parameters('adminPasswordOrKey')]",
+          "linuxConfiguration": "[if(equals(parameters('authenticationType'), 'password'), json('null'), variables('linuxConfiguration'))]"
+        }
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.Network/networkInterfaces', variables('vmFrontend001').networkInterfaceName)]",
+        "[resourceId('Microsoft.Network/virtualNetworks', variables('vnetcfg').name)]"
+      ]
+    }
+  ],
+  "outputs": {}
+}

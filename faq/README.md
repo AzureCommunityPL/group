@@ -22,6 +22,11 @@ Jak zrobić PR?
    * [Azure Resource Manager(ARM)](#azure-resource-manager-arm)
 * [Certyfikaty](#certyfikaty)
 
+* [Cloud Adoption Framework](#cloud-adoption-framework)
+
+* [Przykłady](#przykłady)
+   * [Logic App](#logic-app)
+
 ## Podstawowe rzeczy 
 
 **Gdzie się uczyć Azure?**
@@ -72,7 +77,9 @@ Jak zrobić PR?
 ### Lista oficjalnych laboratoriów do certyfikatów
 
 * [AZ-103 Microsoft Azure Administrator](https://github.com/MicrosoftLearning/AZ-103-MicrosoftAzureAdministrator)
+* [AZ-104 Microsoft Azure Administrator](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator)
 * [AZ-203 Developing Solutions for Microsoft Azure](https://github.com/MicrosoftLearning/AZ-203-DevelopingSolutionsforMicrosoftAzure)
+* [AZ-204 Developing Solutions for Microsoft Azure](https://github.com/MicrosoftLearning/AZ-204-DevelopingSolutionsforMicrosoftAzure)
 * [AZ-300 Microsoft Azure Architect Technologies](https://github.com/MicrosoftLearning/AZ-300-MicrosoftAzureArchitectTechnologies)
 * [AZ-301 Microsoft Azure Architect Design](https://github.com/MicrosoftLearning/AZ-301-MicrosoftAzureArchitectDesign)
 * [AZ-500 Azure Security](https://github.com/MicrosoftLearning/AZ-500-Azure-Security)
@@ -84,3 +91,19 @@ Jak zrobić PR?
 
 ### Lista oficjalnych szkoleń do certyfikatów
 10.03.2020 - linki usunięte gdyż ponieważ wygasły i szkoda miejsca w repo na nie :) - Emil Wasilewski
+
+## Cloud Adoption Framework
+
+### Lista pomocnych linków
+
+* [Cloud Adoption Framework](https://azure.microsoft.com/pl-pl/cloud-adoption-framework/) 
+* [YouTube:](https://www.youtube.com/watch?v=sy6L6yXyv5Q)
+* [FasTrack Azure](https://azure.microsoft.com/pl-pl/programs/azure-fasttrack/)
+* [Assessments](https://docs.microsoft.com/pl-pl/assessments/)
+
+## Przykłady
+
+### Logic App
+
+* [Tworzenie formularza typeform](../examples/logic-apps/create-form-in-typeform.md)
+* [Tworzenie formularza typeform bazując na odpowiedziach udzielonych do innego formularza](../examples/logic-apps/create-form-in-typeform-based-on-the-typeform-responses.md) - w przykładzie tym pokazano jak korzystać z szablonów Liquid
