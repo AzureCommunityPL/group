@@ -11,20 +11,20 @@ Date: 2020-10-22
 
 # Agenda
 
-1. Review przygotowanych rozwiązań.
+1. Przegląd przygotowanych rozwiązań.
 2. Q&A.
 
-# Discussion
+# Dyskusja
 
-## Review projektu architektury
+## Przegląd projektu architektury
 
 ### Zadanie
-Firma chce zabezpieczyć komunikację sieciową pomiędzy zasobami, które są hostowane na Azure oraz zasobami postawionymi na on-premie. Cała infrastruktura powinna być dostępna tylko z sieci firmowej, oraz w ramach podsieci dla maszyn wirtualnych. W chwili obecnej podjęta została decyzja o przeniesieniu całych maszyn wirtualnych wraz z zasobami natomiast zaproponowane rozwiązanie powinno uwzględnić możliwość użycia różnych zasobów Azure w przyszłości.
+Firma chce zabezpieczyć komunikację sieciową pomiędzy zasobami, które są hostowane na Azure oraz zasobami uruchomionymi w sieci lokalnej firmy. Cała infrastruktura powinna być dostępna tylko z sieci firmowej, oraz w ramach podsieci dla maszyn wirtualnych. W chwili obecnej podjęta została decyzja o przeniesieniu całych maszyn wirtualnych wraz z zasobami. Zaproponowane rozwiązanie powinno uwzględnić możliwość użycia różnych zasobów Azure w przyszłości.
 
 ### Wymagania:
 dwie wersje systemu: 
-- 1) stosunkowo bezpieczna i tania oraz 
-- 2) droższa ale bardziej zabezpieczona
+1) stosunkowo bezpieczna i tania 
+2) droższa ale bardziej zabezpieczona
 - należy policzyć koszty rozwiązania (bez kosztów maszyn wirtualnych)
 istotna jest analiza wdrożenia innych usług hostowanych na Azure w przyszłości
 - nakład pracy potrzebny do wdrożenia obu rozwiązań
