@@ -39,3 +39,28 @@ istotna jest analiza wdrożenia innych usług hostowanych na Azure w przyszłoś
 
 ## Q&A
 - miesięczny koszt rozwiązania opartego o Private Link to ok. $9. Przy załozeniu transferu inbound/outbound na poziomie 100GB, oraz wykorzystaniu jednego "link" dla usług!!!
+
+### Linki ze spotkania
+- Service enpoints: https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview
+- Private endpoint: https://docs.microsoft.com/en-us/azure/private-link/private-endpoint-overview
+- Private link: https://docs.microsoft.com/en-us/azure/private-link/private-link-service-overview
+- Łączenie sieci on-premises przez VPN Gateway: https://docs.microsoft.com/en-us/learn/modules/connect-on-premises-network-with-vpn-gateway
+- Łączenie sieci on-premises przez ExpressRoute: https://docs.microsoft.com/en-us/learn/modules/connect-on-premises-network-with-expressroute
+https://azure.microsoft.com/en-us/pricing/details/private-link/
+
+### Podstawy do tematu, który omawialiśmy wczoraj:
+- NSG & Service Endpoint: https://docs.microsoft.com/en-gb/learn/modules/secure-and-isolate-with-nsg-and-service-endpoints/
+- VPN Gateway + on-premises: https://docs.microsoft.com/en-gb/learn/modules/connect-on-premises-network-with-vpn-gateway/
+- Architektura Hub-spoke: https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/hub-spoke
+
+### Egzaminy Microsoft:
+- Azure certifications: https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4wyqh
+- Wszystkie certyfikaty z linkami: https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2PjDI
+
+### Materiały do nauki:
+- Microsoft learn: https://docs.microsoft.com/en-us/learn/
+- Eventy (też takie gdzie można dostać vouchery na egzaminy): https://events.microsoft.com/?timeperiod=next30Days&isSharedInLocalViewMode=true&country=Poland&language=English
+- Wtorki z security: https://info.microsoft.com/CE-SCRTY-CATALOG-FY21-07Jul-29-WtorkizSecurity-SRDEM32279_CatalogDisplayPage.html
+- Czwartki z Azure: https://info.microsoft.com/CE-AzureINFRA-CATALOG-FY20-04Apr-28-ThursdayswithAzure-SRDEM21201_CatalogDisplayPage.html
+- Pluralsight + Azure: https://www.pluralsight.com/partners/microsoft/azure
+- Kurs AZ-900 Adama (podstawy Azure): https://www.youtube.com/channel/UCdmEIMC3LBil4o0tjaTbj0w
