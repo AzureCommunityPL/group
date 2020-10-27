@@ -7,7 +7,7 @@ Date: 2020-10-22
 
 [Meeting link](https://teams.microsoft.com/l/meetup-join/19%3ameeting_MGYzOTZjYWYtNDliNi00NzJiLWFkNWEtYjRhMzJhMGFiMzcw%40thread.v2/0?context=%7b%22Tid%22%3a%22ef60a5a4-900c-4789-89cd-0c42f28ef541%22%2c%22Oid%22%3a%22843f36ea-2af5-4be3-a168-6b8fd3acd1b3%22%7d)
 
-[Recording](#)
+[Recording](https://youtu.be/H2Wf1lo-3ts)
 
 # Agenda
 
@@ -22,7 +22,7 @@ Date: 2020-10-22
 Firma chce zabezpieczyć komunikację sieciową pomiędzy zasobami, które są hostowane na Azure oraz zasobami uruchomionymi w sieci lokalnej firmy. Cała infrastruktura powinna być dostępna tylko z sieci firmowej, oraz w ramach podsieci dla maszyn wirtualnych. W chwili obecnej podjęta została decyzja o przeniesieniu całych maszyn wirtualnych wraz z zasobami. Zaproponowane rozwiązanie powinno uwzględnić możliwość użycia różnych zasobów Azure w przyszłości.
 
 ### Wymagania:
-dwie wersje systemu: 
+- dwie wersje systemu: 
 1) stosunkowo bezpieczna i tania 
 2) droższa ale bardziej zabezpieczona
 - należy policzyć koszty rozwiązania (bez kosztów maszyn wirtualnych)
@@ -40,18 +40,16 @@ istotna jest analiza wdrożenia innych usług hostowanych na Azure w przyszłoś
 ## Q&A
 - miesięczny koszt rozwiązania opartego o Private Link to ok. $9. Przy załozeniu transferu inbound/outbound na poziomie 100GB, oraz wykorzystaniu jednego "link" dla usług!!!
 
-### Linki ze spotkania
+### Linki związane z tematem
 - Service enpoints: https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview
 - Private endpoint: https://docs.microsoft.com/en-us/azure/private-link/private-endpoint-overview
 - Private link: https://docs.microsoft.com/en-us/azure/private-link/private-link-service-overview
 - Łączenie sieci on-premises przez VPN Gateway: https://docs.microsoft.com/en-us/learn/modules/connect-on-premises-network-with-vpn-gateway
 - Łączenie sieci on-premises przez ExpressRoute: https://docs.microsoft.com/en-us/learn/modules/connect-on-premises-network-with-expressroute
-https://azure.microsoft.com/en-us/pricing/details/private-link/
-
-### Podstawy do tematu, który omawialiśmy wczoraj:
 - NSG & Service Endpoint: https://docs.microsoft.com/en-gb/learn/modules/secure-and-isolate-with-nsg-and-service-endpoints/
 - VPN Gateway + on-premises: https://docs.microsoft.com/en-gb/learn/modules/connect-on-premises-network-with-vpn-gateway/
 - Architektura Hub-spoke: https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/hub-spoke
+- Private Link pricing: https://azure.microsoft.com/en-us/pricing/details/private-link/
 
 ### Egzaminy Microsoft:
 - Azure certifications: https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4wyqh
