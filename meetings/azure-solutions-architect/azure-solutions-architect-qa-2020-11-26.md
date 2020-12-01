@@ -27,7 +27,7 @@ Elementy który warto wziąć pod uwagę to:
 
 ### Ogólne linki architektoniczne
 - Cloud Design Patterns: https://docs.microsoft.com/en-us/azure/architecture/patterns/
-- Webinar z Chmurowiska z trzema przykładami architektur: https://bit.ly/39x8qKG
+- Architektury Azure: https://docs.microsoft.com/en-us/azure/architecture/browse/
 
 ### Infrastruktura & private endpoints
 - Projektowanie sieci w chmurze z perspektywy bezpieczeństwa: https://www.youtube.com/watch?v=7EJtmX1Vcmc
