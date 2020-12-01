@@ -12,6 +12,7 @@ Date: 2020-12-10
 # Agenda
 1. Dyskusja o AAD i podstawowych pojęciach związanych z Active Directory
 2. Application flows - czyli jak połączyć użytkowników AAD z aplikacją hostowaną w chmurze
+3. Omówienie zaproponowanych rozwiązań zadania
 
 ## Zadanie
 Połącz w bezpieczny sposób aplikację web z bazą danych (np. Cosmos DB) i pobierz informacje korzystając z tokenu użytkownika.
