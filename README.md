@@ -8,4 +8,4 @@ Zapraszamy do pokazania wsparcia dla grupy poprzez danie gwiazdki w prawym, gór
 ### EN
 Everyone is welcome to join the Microsoft Azure user community - we just expect that you are willing to share your knowledge, capabilities and experience on the subjects of administering services running on the Microsoft Azure platform and/or programming using various elements of this platform. The community is also open to everyone who wants to start using Microsoft Azure and is looking for information and support.
 
-We invite you to support th ecommunity by giving us a star in the top-right corner of the page :)
+We invite you to support the community by giving us a star in the top-right corner of the page :)
