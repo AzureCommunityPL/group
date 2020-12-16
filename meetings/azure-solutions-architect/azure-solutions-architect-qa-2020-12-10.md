@@ -7,7 +7,7 @@ Date: 2020-12-10
 
 [Meeting link](https://bit.ly/36jLuwk)
 
-[Recording](#)
+[Recording](https://www.youtube.com/watch?v=LVDt0l-u8Y8)
 
 # Agenda
 1. Omówienie zaproponowanego rozwiązania zadania
